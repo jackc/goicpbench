@@ -8,6 +8,7 @@ The main program spawns a new process for the plugin. The communication methods 
 
 * stdin / stdout
 * TCP
+* Unix domain socket
 * memory sharing such as with mmap
 
 The message sent from the main process to the plugin process is "ping". The plugin process returns "pong". When the plugin process receives "quit", it terminates.
